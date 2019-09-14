@@ -1,0 +1,289 @@
+/* General content view */
+/* Header */
+/* Logo */
+/* Loading */
+/* Navbar */
+/* Main */
+/* /* Section with photo */
+/* Image lines */
+/* Quotes */
+/* Footer */
+/* Adaptation */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0 !important;
+}
+
+/* General content view  */
+.d-flex {
+    display: flex;
+}
+.d-block {
+    display: block;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.justify_content_spase_evenly{
+    justify-content: space-evenly;
+}
+.justify_content_spase_around{
+    justify-content: space-around;
+}
+.justify_content_center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.pt-4, .p-4, .py-4{
+    padding-top: 1.5rem;
+}
+.pr-4, .p-4, .px-4{
+    padding-right: 1.5rem;
+}
+.pl-4, .p-4, .px-4{
+    padding-left: 1.5rem;
+}
+.pb-4, .p-4, .py-4{
+    padding-bottom: 1.5rem;
+}
+.pt-, .p-3, .py-3{
+    padding-top: 1rem;
+}
+.pr-, .p-3, .px-3{
+    padding-right: 1rem;
+}
+.pl-, .p-3, .px-3{
+    padding-left: 1rem;
+}
+.pb-, .p-3, .py-3{
+    padding-bottom: 1rem;}
+
+
+    /* Header */
+
+header {
+    width: 100%;
+    background: #E2CDB0;
+}
+ 
+    /* Logo */
+.site-logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color:black;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-style: italic;
+    background: #E2CDB0;
+    text-decoration: none;
+    display: block;
+}
+
+/* Loading */
+
+.loading {
+    background:#E2CDB0;
+}
+.loading1, .loading2, .loading3 {
+    width: .3rem;
+    height: .3rem;
+    border-radius: 100%;
+    background: black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    animation: show 2s ease-in infinite;
+}
+
+ @keyframes show {
+    0% {width: .3rem;
+        height: .5rem;
+        background-color: rgb(202, 161, 129);}
+    10% {width: .4rem;
+        height: .4rem;
+        background-color: #A57A59; }
+    20% {width: .5rem;
+        height: .5rem;
+        background-color: #A35B35;}
+    30% {width: .6rem;
+        height: .6rem;
+        background-color: #A35B35;}
+    40% {width: .7rem;
+        height: .7rem;
+        background-color: #471612;}
+    50% {width: .8rem;
+        height: .8rem;
+        background: black;}
+    60% {width: .7rem;
+        height: .7rem;
+        background-color: #471612;}
+    70% {width: .6rem;
+        height: .6rem;
+        background-color: #A35B35;}    
+    80% {width: .5rem;
+        height: .5rem;
+        background-color: #A35B35;}
+    90% {width: .4rem;
+        height: .4rem;
+        background-color: #A57A59;}
+    100% {width: .3rem;
+        height: .3rem;
+        background-color: rgb(202, 161, 129);}
+ }
+
+/* Navbar */
+.navbar{
+    list-style: none;
+    text-transform: uppercase;
+}
+.navbar a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 1 s;
+    color: black;
+    font-style: italic;
+}
+.navbar a:hover, .navbar:focus{
+    color: grey;
+    font-size: 1.3rem;
+}
+.navbar a::before{
+    margin: .5rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+a.home::before{
+    font-style: normal;
+    content: "\f594";
+    color: #A57A59;
+}
+a.about::before{
+    font-style: normal;
+    content: "\f2bd";
+    color: #A35B35;
+}
+a.gallery::before{
+    font-style: normal;
+    content: "\f083";
+    color: #5C342F;
+}
+a.contacts::before{
+    font-style: normal;
+    content: "\f2b9";
+    color: #471612;
+}
+
+/* Main */
+/* /* Section with photo */
+section{
+    background: rgba(245,244,237,1);
+    background: -moz-linear-gradient(top, rgba(245,244,237,1) 0%, rgba(246,246,246,1) 26%, rgba(230,223,196,1) 59%, rgba(226,205,176,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(245,244,237,1)), color-stop(26%, rgba(246,246,246,1)), color-stop(59%, rgba(230,223,196,1)), color-stop(100%, rgba(226,205,176,1)));
+    background: -webkit-linear-gradient(top, rgba(245,244,237,1) 0%, rgba(246,246,246,1) 26%, rgba(230,223,196,1) 59%, rgba(226,205,176,1) 100%);
+    background: -o-linear-gradient(top, rgba(245,244,237,1) 0%, rgba(246,246,246,1) 26%, rgba(230,223,196,1) 59%, rgba(226,205,176,1) 100%);
+    background: -ms-linear-gradient(top, rgba(245,244,237,1) 0%, rgba(246,246,246,1) 26%, rgba(230,223,196,1) 59%, rgba(226,205,176,1) 100%);
+    background: linear-gradient(to bottom, rgba(245,244,237,1) 0%, rgba(246,246,246,1) 26%, rgba(230,223,196,1) 59%, rgba(226,205,176,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f4ed', endColorstr='#e2cdb0', GradientType=0 );
+}
+.section-photo{
+    width: 100%;
+}
+
+/* Image Lines */ 
+.section-photo img{
+   flex-wrap: wrap;
+   max-height: 380px;
+   margin: 5px;
+   cursor: pointer;
+}
+img:hover {
+    transform: scale(1.1);
+    transition: all s;
+}
+ /* Quotes */
+
+blockquote {
+    background: #E2CDB0;
+    margin: auto auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+}
+blockquote span {
+    color: rgba(165, 122, 89, 0.7);
+}
+
+/* Footer */
+
+footer {
+    background:rgb(207, 174, 143);
+    align-items: center;
+}
+footer a{
+    background:rgb(207, 174, 143);
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+footer i {
+    padding: .4rem;
+    cursor: pointer;
+}
+footer:nth-child(3){
+    font-size: 1.5rem;
+}
+footer div, footer section {
+    background: rgb(207, 174, 143);
+}
+
+
+/* Adaptation */
+
+@media screen and (max-width:768px){
+    header{ 
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+    .navbar {
+        justify-content:center;
+        flex-direction: column;
+        display: inline-flex;
+    }
+    .site-logo{
+        margin: auto auto;
+    }
+    .loading {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .loading1, .loading2, .loading3 {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+}
+@media screen and (max-width: 375px){
+    .site-logo{
+    font-size: 17px;}
+    .navbar a{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 320px){
+    .loading1, .loading2, .loading3 {
+    visibility: hidden;
+    display: none;
+    }
+}
+
+
+
+
